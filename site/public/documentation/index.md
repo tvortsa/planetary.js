@@ -1,5 +1,5 @@
-Introduction
-============
+Введение
+========
 
 Planetary.js is a JavaScript library for building awesome interactive globes. It uses [D3](http://d3js.org/) and [TopoJSON](https://github.com/mbostock/topojson) to parse and render geographic data. Planetary.js uses a plugin-based architecture; even the default functionality is implemented as plugins! This makes Planetary.js extremely flexible.
 
@@ -12,8 +12,8 @@ The documentation is split up into several sections:
 * [FAQ](/documentation/faq.html) answers some common question and addresses a few easy-to-miss gotchas.
 * [Getting Help](/documentation/help.html) describes what to do if you still need help after reading this documentation.
 
-Quick Start
------------
+Быстрый старт
+-------------
 
 If you want to get up-and-running quickly, or like to experiment and figure things out, you can use this HTML and JavaScript to get a very simple globe up and running (once you've [installed Planetary.js](/documentation/installation.html)).
 
