@@ -1,17 +1,17 @@
-Plugins
+Плагины
 =======
 
-Planetary.js uses a plugin-based architecture, and all the built-in functionality is built using this architecture. This makes Planetary.js extremely flexible.
+Planetary.js использует архитектуру основанную на плагинах, и весь встроенный функционал использует эту архитектуру. Это делает Planetary.js очень гибкой.
 
-Loading Plugins
----------------
+Загрузка плагинов
+-----------------
 
-Plugins are loaded either globally by `planetaryjs.loadPlugin` or for a specific planet instance by `planet.loadPlugin`. If you call `draw` on a planet and it has no plugins loaded at all (from either source), Planetary.js will use the default plugin stack, which consists of the `earth` and `pings` plugins.
+Плагины загружаются либо глобально `planetaryjs.loadPlugin` Или для конкретного экземпляра планеты посредством `planet.loadPlugin`. Если вы вызовете `draw` на planet and it has no plugins loaded at all (from either source), Planetary.js will use the default plugin stack, which consists of the `earth` and `pings` plugins.
 
-Anatomy of a Plugin
+Анатомия плагина
 -------------------
 
-A plugin is simply a JavaScript function that takes a planet instance as a parameter and performs some operation on it. **The best plugins do one tiny thing.** If you want a plugin to do a lot of things at once, you should build a plugin that wraps other, smaller plugins; in fact, this is exactly how the `earth` plugin is built. See the [Earth Plugin documentation](/documentation/builtin_earth.html) for more details.
+Плагин это простая JavaScript функция которая принимает экземпляр planet как параметр и выполняет с ним какие-то действия. **Хороший плагин делает одну крошечную вещь.** If you want a plugin to do a lot of things at once, you should build a plugin that wraps other, smaller plugins; in fact, this is exactly how the `earth` plugin is built. См. [Документация по плагину Earth](/documentation/builtin_earth.html) .
 
 Most of the time, a plugin will implement its behavior by registering callbacks into a planet's lifecycle hooks. For example, the following simple plugin increments the planet's projection's rotation by one degree every tick (this would make for a very fast spinning globe, but demonstrates the idea nicely enough):
 
@@ -32,8 +32,8 @@ planet.loadPlugin(autorotate);
 ```
 </div>
 
-Configurable Plugins
---------------------
+Конфигурирование плагинов
+-------------------------
 
 Often, you'll want your plugin to be configurable with some user-defined values. In this case, you can create a higher-order function, which takes your configuration data and then *returns* the plugin function. You can then call this function to generate the plugin for use by `loadPlugin`.
 
