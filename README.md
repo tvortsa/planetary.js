@@ -1,21 +1,21 @@
 Planetary.js
 ============
 
-Planetary.js is a JavaScript library for building awesome interactive globes, like this one:
+Planetary.js это JavaScript библиотека для создания интерактивного глобуса, типа такого:
 
 ![Planetary.js Screenshot](screenshot.png)
 
-Planetary.js is based on [D3.js](http://d3js.org/) and [TopoJSON](https://github.com/mbostock/topojson). It has built-in support for zoom, rotation, mouse interaction, and displaying animated "pings" at any coordinate. Via plugins, Planetary.js can be extended to do whatever you want!
+Planetary.js основан на [D3.js](http://d3js.org/) и [TopoJSON](https://github.com/mbostock/topojson). И имеет встроенную поддержку для  zoom, rotation, mouse interaction, и отображения анимированных "pings" в любых координатах. Через плагины, Planetary.js может быть расширен как вам угодно!
 
-Examples, documentation, and more can be found at [planetaryjs.com](http://planetaryjs.com/).
+Примеры, документация, и многое другое см на [planetaryjs.com](http://planetaryjs.com/).
 
-Requirements
+Требования
 ------------
 
 * [D3](http://d3js.org/) version 3
 * [TopoJSON](https://github.com/mbostock/topojson) version 1
 
-Download
+Загрузка
 --------
 
 Download Planetary.js from the [Planetary.js web site](http://planetaryjs.com/download/).
@@ -23,7 +23,7 @@ Download Planetary.js from the [Planetary.js web site](http://planetaryjs.com/do
 Quick Start
 -----------
 
-You'll need to run this page from a web server of some kind so that Planetary.js can load the TopoJSON data via Ajax.
+Вы должны запускать эту страницу через WEB-сервер поскольку Planetary.js может загружать данные TopoJSON через Ajax.
 
 HTML:
 
